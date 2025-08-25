@@ -1,0 +1,213 @@
+diff all
+
+# version
+# Betaflight / STM32H743 (SH74) 4.4.0 Feb  1 2023 / 23:42:40 (4605309d8) MSP API: 1.45
+
+# config: YES
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name MAMBAH743_2022B
+manufacturer_id DIAT
+mcu_id 002100313230510736353631
+signature 
+
+# name: LongRange
+
+# resources
+resource PINIO 1 NONE
+resource PINIO 2 C05
+
+# feature
+feature -AIRMODE
+feature GPS
+feature TELEMETRY
+
+# serial
+serial 1 2 115200 57600 0 115200
+serial 2 131073 115200 57600 0 115200
+
+# beeper
+beeper -GYRO_CALIBRATED
+beeper -RX_LOST
+beeper -RX_LOST_LANDING
+beeper -DISARMING
+beeper -ARMING
+beeper -ARMING_GPS_FIX
+beeper -BAT_CRIT_LOW
+beeper -BAT_LOW
+beeper -GPS_STATUS
+beeper -ACC_CALIBRATION
+beeper -ACC_CALIBRATION_FAIL
+beeper -DISARM_REPEAT
+beeper -ARMED
+beeper -SYSTEM_INIT
+beeper -ON_USB
+beeper -BLACKBOX_ERASE
+beeper -CRASH_FLIP
+beeper -CAM_CONNECTION_OPEN
+beeper -CAM_CONNECTION_CLOSE
+beeper -RC_SMOOTHING_INIT_FAIL
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 3 1700 2100 0 0
+aux 2 46 4 1325 2100 0 0
+aux 3 13 6 1900 2100 0 0
+aux 4 26 6 1100 1250 0 0
+aux 5 28 3 1375 1600 0 0
+aux 6 31 6 1300 1475 1 0
+aux 7 31 0 900 900 1 36
+aux 8 36 1 1500 2100 0 0
+aux 9 37 6 1525 1675 0 0
+aux 10 40 2 1600 2100 0 0
+aux 11 52 6 1750 1875 0 0
+
+# adjrange
+adjrange 0 0 5 900 2100 29 5 0 0
+
+# rxfail
+rxfail 0 s 1500
+rxfail 1 s 1500
+rxfail 2 s 1500
+rxfail 3 s 1350
+rxfail 5 h
+rxfail 6 h
+rxfail 7 s 2000
+
+# master
+set gyro_to_use = BOTH
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set acc_calibration = 14,0,12,1
+set rc_smoothing_auto_factor = 68
+set serialrx_provider = CRSF
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT600
+set failsafe_delay = 8
+set failsafe_throttle = 1221
+set failsafe_throttle_low_delay = 150
+set failsafe_procedure = GPS-RESCUE
+set bat_capacity = 5200
+set vbat_max_cell_voltage = 425
+set vbat_min_cell_voltage = 275
+set vbat_warning_cell_voltage = 300
+set vbat_scale = 109
+set ibata_scale = 52
+set gps_sbas_mode = AUTO
+set gps_ublox_use_galileo = ON
+set gps_set_home_point_once = ON
+set gps_rescue_min_start_dist = 20
+set gps_rescue_alt_mode = CURRENT_ALT
+set gps_rescue_ascend_rate = 400
+set gps_rescue_ground_speed = 700
+set gps_rescue_pitch_angle_max = 45
+set gps_rescue_descent_dist = 35
+set gps_rescue_throttle_max = 1700
+set gps_rescue_throttle_hover = 1307
+set gps_rescue_min_sats = 5
+set gps_rescue_allow_arming_without_fix = ON
+set osd_warn_bitmask = 57309
+set osd_rssi_dbm_alarm = -100
+set osd_cap_alarm = 5000
+set osd_alt_alarm = 160
+set osd_tim1 = 1
+set osd_tim2 = 2
+set osd_vbat_pos = 1103
+set osd_rssi_pos = 1422
+set osd_link_quality_pos = 7726
+set osd_link_tx_power_pos = 3598
+set osd_rssi_dbm_pos = 6733
+set osd_rsnr_pos = 193
+set osd_tim_1_pos = 7239
+set osd_tim_2_pos = 4162
+set osd_remaining_time_estimate_pos = 233
+set osd_flymode_pos = 6214
+set osd_g_force_pos = 128
+set osd_throttle_pos = 2150
+set osd_vtx_channel_pos = 1320
+set osd_crosshairs_pos = 6489
+set osd_current_pos = 6227
+set osd_mah_drawn_pos = 7233
+set osd_craft_name_pos = 35
+set osd_pilot_name_pos = 67
+set osd_gps_speed_pos = 2310
+set osd_gps_lon_pos = 16867
+set osd_gps_lat_pos = 49696
+set osd_gps_sats_pos = 6597
+set osd_home_dir_pos = 2409
+set osd_home_dist_pos = 2406
+set osd_flight_dist_pos = 2438
+set osd_altitude_pos = 6438
+set osd_power_pos = 2125
+set osd_warnings_pos = 6357
+set osd_avg_cell_voltage_pos = 6235
+set osd_battery_usage_pos = 33798
+set osd_disarmed_pos = 6326
+set osd_up_down_reference_pos = 2212
+set osd_esc_tmp_pos = 1487
+set osd_esc_rpm_pos = 1167
+set osd_core_temp_pos = 3566
+set osd_log_status_pos = 1358
+set osd_stick_overlay_left_pos = 4585
+set osd_stick_overlay_right_pos = 5604
+set osd_rcchannels_pos = 303
+set osd_sys_goggle_voltage_pos = 1196
+set osd_sys_vtx_voltage_pos = 1229
+set osd_sys_bitrate_pos = 1352
+set osd_sys_delay_pos = 1389
+set osd_sys_distance_pos = 1385
+set osd_sys_lq_pos = 1230
+set osd_sys_vtx_dvr_pos = 1287
+set osd_sys_warnings_pos = 6293
+set osd_sys_vtx_temp_pos = 1485
+set osd_stat_bitmask = 44203902
+set osd_gps_sats_show_hdop = ON
+set osd_displayport_device = MSP
+set vcd_video_system = HD
+set pinio_box = 0,40,255,255
+set gyro_1_sensor_align = CW0
+set gyro_1_align_yaw = 0
+set craft_name = LongRange
+
+profile 0
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+# rateprofile 0
+set thr_mid = 20
+set thr_expo = 32
+set roll_rc_rate = 12
+set pitch_rc_rate = 12
+set yaw_rc_rate = 24
+set roll_srate = 44
+set pitch_srate = 44
+set yaw_srate = 44
+set throttle_limit_type = SCALE
+set throttle_limit_percent = 90
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 
