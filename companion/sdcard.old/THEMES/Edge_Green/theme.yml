@@ -1,0 +1,18 @@
+---
+summary:
+  name: RCVR_GreenOrangeBright
+  author: RCVR (mod by user)
+  info: Grün-Orange ohne Rot, mit besserem Orange
+
+colors:
+  PRIMARY1:   0x000000      # Hintergrund dunkel
+  PRIMARY2:   0xF8FCF8      # Text hell
+  PRIMARY3:   0x080800      # dunkles Grün-Schwarz
+  SECONDARY1: 0x00C400      # Grün (Top-Balken)
+  SECONDARY2: 0x60A018      # Gelbgrün für Sekundär-Akzente
+  SECONDARY3: 0xF8FCF8      # Hell
+  FOCUS:      0xFFA000      # ➜ Kräftiges Orange für Auswahl
+  EDIT:       0x006000      # Dunkelgrün für Bearbeiten
+  ACTIVE:     0xD8D8D8      # Aktiviertes Feld
+  WARNING:    0xFFA000      # ➜ Kräftiges Orange für Warnungen
+  DISABLED:   0x505050      # Grau für deaktivierte Elemente
