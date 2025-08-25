@@ -10,7 +10,7 @@ for f in "$INPUT_DIR"/*.mp3; do
     echo "Bearbeite: $base.mp3"
 
     # Schritt 1: Lautstärke anheben und nach WAV konvertieren
-    ffmpeg -y -i "$f" -filter:a "volume=6dB" \
+    ffmpeg -y -i "$f" -filter:a "volume=10dB" \
         -ar 16000 -ac 1 -acodec pcm_s16le \
         "$OUTPUT_DIR/${base}_temp.wav"
 
