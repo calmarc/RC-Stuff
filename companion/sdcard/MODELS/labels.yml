@@ -1,0 +1,54 @@
+Labels:
+  "planes":
+    selected: true
+  "mcopter":
+Sort: 1
+Models:
+  model2.yml:
+    hash: "bf5d0000195b0461"
+    name: "Diamond2500"
+    mod1id: 11
+    mod1type: 5
+    labels: "planes"
+    bitmap: "dia2500.png"
+    lastopen: 1756126332
+  model3.yml:
+    hash: "b9640000195b8226"
+    name: "longrange7i"
+    mod1id: 1
+    labels: "mcopter"
+    bitmap: "lr_7inch.png"
+    lastopen: 1756126227
+  model4.yml:
+    hash: "5b4d0000185b8db2"
+    name: "meteor85"
+    mod1id: 3
+    mod1type: 5
+    labels: "mcopter"
+    bitmap: "meteor85.png"
+    lastopen: 1756073857
+  model5.yml:
+    hash: "04650000195b1127"
+    name: "Racer5i"
+    mod1id: 2
+    mod1type: 5
+    labels: "mcopter"
+    bitmap: "racer_5.png"
+    lastopen: 1756126275
+  model6.yml:
+    hash: "f5520000195bbd24"
+    name: "Triple Speed"
+    mod1id: 11
+    mod1type: 5
+    labels: "planes"
+    bitmap: "triplene.png"
+    lastopen: 1756126127
+  model1.yml:
+    hash: "e9550000195b5b26"
+    name: "85 new"
+    mod1id: 4
+    mod1type: 5
+    labels: "mcopter"
+    bitmap: "me85_fly.png"
+    lastopen: 1756126181
+
