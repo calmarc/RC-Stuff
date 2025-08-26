@@ -1,0 +1,3 @@
+[submodule "EdgeTX-Widgets"]
+	path = EdgeTX-Widgets
+	url = file:///home/calmar/coding/lua/EdgeTX-Widgets
