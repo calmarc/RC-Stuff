@@ -5,15 +5,15 @@ Labels:
 Sort: 1
 Models:
   model2.yml:
-    hash: "bf5d0000195b0461"
+    hash: "156c0000215bfb75"
     name: "Diamond2500"
     mod1id: 11
     mod1type: 5
     labels: "planes"
     bitmap: "dia2500.png"
-    lastopen: 1756126332
+    lastopen: 1756693740
   model3.yml:
-    hash: "b9640000195b8226"
+    hash: "bd640000195b6766"
     name: "longrange7i"
     mod1id: 1
     labels: "mcopter"
@@ -28,7 +28,7 @@ Models:
     bitmap: "meteor85.png"
     lastopen: 1756073857
   model5.yml:
-    hash: "04650000195b1127"
+    hash: "08650000195b8566"
     name: "Racer5i"
     mod1id: 2
     mod1type: 5
@@ -36,15 +36,15 @@ Models:
     bitmap: "racer_5.png"
     lastopen: 1756126275
   model6.yml:
-    hash: "f5520000195bbd24"
+    hash: "11580000215b8313"
     name: "Triple Speed"
     mod1id: 11
     mod1type: 5
     labels: "planes"
     bitmap: "triplene.png"
-    lastopen: 1756126127
+    lastopen: 1756693228
   model1.yml:
-    hash: "e9550000195b5b26"
+    hash: "ed550000195b4d66"
     name: "85 new"
     mod1id: 4
     mod1type: 5

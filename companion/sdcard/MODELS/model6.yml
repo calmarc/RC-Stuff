@@ -55,6 +55,26 @@ mixData:
    speedDown: 0
    name: "AilR"
  -
+   destCh: 0
+   srcRaw: "I0"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: "I2"
+   offset: 0
+   swtch: "NONE"
+   curve: 
+      type: 3
+      value: 3
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
    destCh: 1
    srcRaw: "I1"
    carryTrim: 0
@@ -139,6 +159,26 @@ mixData:
    speedUp: 0
    speedDown: 0
    name: "AilL"
+ -
+   destCh: 5
+   srcRaw: "Ail"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: "I2"
+   offset: 0
+   swtch: "NONE"
+   curve: 
+      type: 3
+      value: 3
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
 limitData: 
    0:
       min: 640
@@ -214,8 +254,8 @@ expoData:
    offset: 0
    swtch: "NONE"
    curve: 
-      type: 1
-      value: 0
+      type: 3
+      value: 2
    chn: 2
    flightModes: 000000000
    name: ""
@@ -253,6 +293,16 @@ curves:
       smooth: 0
       points: 0
       name: "thr"
+   1:
+      type: 0
+      smooth: 0
+      points: -3
+      name: "cro"
+   2:
+      type: 0
+      smooth: 0
+      points: -2
+      name: "AiC"
 points: 
    0:
       val: -100
@@ -262,6 +312,10 @@ points:
       val: -100
    4:
       val: 100
+   5:
+      val: 100
+   8:
+      val: 50
 logicalSw: 
    0:
       func: FUNC_VNEG
@@ -324,6 +378,35 @@ customFn:
       swtch: "SA2"
       func: PLAY_TRACK
       def: "VariOn,1,1x"
+flightModeData: 
+   0:
+      trim: 
+         3:
+            value: -2
+            mode: 0
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+         2:
+            val: 0
+         3:
+            val: 0
+         4:
+            val: 0
+         5:
+            val: 0
+         6:
+            val: 0
+         7:
+            val: 0
+         8:
+            val: 0
 thrTraceSrc: SL2
 switchWarning: 
    SF:
@@ -372,7 +455,7 @@ inputNames:
    1:
       val: "Ele"
    2:
-      val: "Thr"
+      val: "Crow"
    3:
       val: "Rud"
    4:

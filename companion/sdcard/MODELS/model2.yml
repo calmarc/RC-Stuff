@@ -55,6 +55,26 @@ mixData:
    speedDown: 0
    name: "AilR"
  -
+   destCh: 0
+   srcRaw: "I0"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: "I2"
+   offset: 0
+   swtch: "NONE"
+   curve: 
+      type: 3
+      value: 3
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
    destCh: 1
    srcRaw: "I1"
    carryTrim: 0
@@ -70,7 +90,44 @@ mixData:
    delayDown: 0
    speedUp: 0
    speedDown: 0
+   name: ""
+ -
+   destCh: 1
+   srcRaw: "I1"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: "I2"
+   offset: 0
+   swtch: "NONE"
+   curve: 
+      type: 3
+      value: 4
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
    name: "Elev"
+ -
+   destCh: 2
+   srcRaw: "I4"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: 0
+   offset: -100
+   swtch: "!L3"
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
  -
    destCh: 2
    srcRaw: "I4"
@@ -83,6 +140,9 @@ mixData:
    weight: 100
    offset: 0
    swtch: "L3"
+   curve: 
+      type: 3
+      value: 1
    delayUp: 0
    delayDown: 0
    speedUp: 0
@@ -114,7 +174,7 @@ mixData:
    delayPrec: 0
    speedPrec: 0
    flightModes: 000000000
-   weight: -100
+   weight: 100
    offset: 0
    swtch: "NONE"
    delayUp: 0
@@ -140,8 +200,28 @@ mixData:
    speedDown: 0
    name: "AilL"
  -
+   destCh: 5
+   srcRaw: "I0"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: "I2"
+   offset: 0
+   swtch: "NONE"
+   curve: 
+      type: 3
+      value: 7
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
    destCh: 6
-   srcRaw: "I2"
+   srcRaw: "I5"
    carryTrim: 0
    mixWarn: 0
    mltpx: ADD
@@ -157,8 +237,28 @@ mixData:
    speedDown: 0
    name: "FlapR"
  -
+   destCh: 6
+   srcRaw: "I5"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: "I2"
+   offset: 0
+   swtch: "NONE"
+   curve: 
+      type: 3
+      value: 8
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
    destCh: 7
-   srcRaw: "I2"
+   srcRaw: "I5"
    carryTrim: 0
    mixWarn: 0
    mltpx: ADD
@@ -173,23 +273,43 @@ mixData:
    speedUp: 0
    speedDown: 0
    name: "FlapsL"
+ -
+   destCh: 7
+   srcRaw: "I5"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: "I2"
+   offset: 0
+   swtch: "NONE"
+   curve: 
+      type: 3
+      value: 8
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
 limitData: 
    0:
       min: 240
       max: -240
-      ppmCenter: 57
+      ppmCenter: -98
       offset: 0
       symetrical: 0
-      revert: 1
-      curve: 2
+      revert: 0
+      curve: 0
       name: ""
    1:
       min: 0
       max: 0
-      ppmCenter: -63
+      ppmCenter: 74
       offset: 0
       symetrical: 0
-      revert: 0
+      revert: 1
       curve: 0
       name: ""
    2:
@@ -199,51 +319,42 @@ limitData:
       offset: 0
       symetrical: 0
       revert: 0
-      curve: 1
+      curve: 0
       name: "Motor"
    3:
       min: 0
       max: 0
-      ppmCenter: 134
+      ppmCenter: -135
       offset: 0
       symetrical: 0
-      revert: 1
-      curve: 0
-      name: ""
-   4:
-      min: 0
-      max: 0
-      ppmCenter: 0
-      offset: 0
-      symetrical: 0
-      revert: 1
+      revert: 0
       curve: 0
       name: ""
    5:
       min: 240
       max: -240
-      ppmCenter: 81
+      ppmCenter: -110
       offset: 0
       symetrical: 0
-      revert: 1
+      revert: 0
       curve: 0
       name: ""
    6:
-      min: 640
-      max: 0
-      ppmCenter: 118
+      min: 0
+      max: -200
+      ppmCenter: 72
       offset: 0
       symetrical: 0
-      revert: 1
+      revert: 0
       curve: 0
       name: ""
    7:
-      min: 640
-      max: 0
-      ppmCenter: 0
+      min: 0
+      max: -140
+      ppmCenter: 39
       offset: 0
       symetrical: 0
-      revert: 1
+      revert: 0
       curve: 0
       name: ""
 expoData: 
@@ -288,14 +399,14 @@ expoData:
       value: 0
    chn: 1
    flightModes: 000000000
-   name: "mode1"
+   name: "Mode1"
  -
    mode: 3
    scale: 0
    trimSource: 0
    srcRaw: "Thr"
-   weight: -100
-   offset: 0
+   weight: -50
+   offset: 50
    swtch: "!SB2"
    curve: 
       type: 1
@@ -307,8 +418,8 @@ expoData:
    mode: 3
    scale: 0
    trimSource: 0
-   srcRaw: "Ele"
-   weight: -100
+   srcRaw: "Thr"
+   weight: 0
    offset: 0
    swtch: "NONE"
    curve: 
@@ -316,7 +427,7 @@ expoData:
       value: 0
    chn: 2
    flightModes: 000000000
-   name: "mode1"
+   name: "Mode1"
  -
    mode: 3
    scale: 0
@@ -345,60 +456,86 @@ expoData:
    chn: 4
    flightModes: 000000000
    name: ""
+ -
+   mode: 3
+   scale: 0
+   trimSource: 1
+   srcRaw: "SG"
+   weight: 100
+   offset: 0
+   swtch: "NONE"
+   curve: 
+      type: 3
+      value: 6
+   chn: 5
+   flightModes: 000000000
+   name: ""
 curves: 
    0:
       type: 0
       smooth: 1
-      points: 12
+      points: -1
       name: "Mot"
    1:
       type: 0
-      smooth: 1
-      points: 0
-      name: "Que"
+      smooth: 0
+      points: -3
+      name: "Cro"
+   2:
+      type: 0
+      smooth: 0
+      points: -2
+      name: "CAR"
+   3:
+      type: 0
+      smooth: 0
+      points: -2
+      name: "CEl"
+   4:
+      type: 0
+      smooth: 0
+      points: -2
+      name: "CFR"
+   5:
+      type: 0
+      smooth: 0
+      points: -2
+      name: "Fla"
+   6:
+      type: 0
+      smooth: 0
+      points: -2
+      name: "CAL"
+   7:
+      type: 0
+      smooth: 0
+      points: -2
+      name: "CFL"
 points: 
    0:
       val: -100
    1:
       val: -100
    2:
-      val: -100
+      val: -46
    3:
-      val: -100
-   4:
-      val: -100
-   5:
-      val: -100
-   6:
-      val: -100
-   7:
-      val: -100
-   8:
-      val: -100
-   9:
-      val: -100
-   10:
-      val: -88
-   11:
-      val: -67
-   12:
-      val: -24
-   13:
-      val: 21
-   14:
-      val: 45
-   15:
-      val: 72
-   16:
       val: 100
-   17:
-      val: -70
-   18:
-      val: -25
-   20:
-      val: 25
-   21:
+   4:
+      val: 100
+   7:
+      val: 50
+   10:
+      val: 14
+   13:
       val: 70
+   15:
+      val: -70
+   17:
+      val: 32
+   19:
+      val: -50
+   22:
+      val: -70
 logicalSw: 
    0:
       func: FUNC_VNEG
@@ -473,11 +610,37 @@ customFn:
       swtch: "L1"
       func: PLAY_TRACK
       def: "MotOff,1,1x"
+   12:
+      swtch: "ON"
+      func: BACKLIGHT
+      def: "T6,1"
+   13:
+      swtch: "ON"
+      func: VOLUME
+      def: "T5,1"
+   14:
+      swtch: "SG1"
+      func: PLAY_TRACK
+      def: "FNeutr,1,1x"
+   15:
+      swtch: "SG0"
+      func: PLAY_TRACK
+      def: "FDSlow,1,1x"
+   16:
+      swtch: "SG2"
+      func: PLAY_TRACK
+      def: "FUFast,1,1x"
 flightModeData: 
    0:
       trim: 
-         5:
+         3:
             value: -2
+            mode: 0
+         4:
+            value: 2
+            mode: 0
+         5:
+            value: -122
             mode: 0
       name: ""
       swtch: "NONE"
@@ -501,6 +664,86 @@ flightModeData:
          7:
             val: 0
          8:
+            val: 0
+   1:
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+   2:
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+   3:
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+   4:
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+   5:
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+   6:
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+   7:
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+   8:
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
             val: 0
 thrTraceSrc: SL2
 switchWarning: 
@@ -542,21 +785,19 @@ trainerData:
    frameLength: 0
    delay: 0
    pulsePol: 0
-scriptsData: 
-   0:
-      file: "sinus"
-      name: "sin"
 inputNames: 
    0:
       val: "Ail"
    1:
-      val: "Ele"
+      val: "Elev"
    2:
-      val: "Thr"
+      val: "Crow"
    3:
       val: "Rud"
    4:
       val: "Moto"
+   5:
+      val: "Flap"
 potsWarnEnabled: 16
 potsWarnPosition: 
    4:
@@ -1081,7 +1322,7 @@ topbarData:
                1:
                   type: Signed
                   value: 
-                     signedValue: 1
+                     signedValue: 4
                2:
                   type: Bool
                   value: 
@@ -1194,7 +1435,7 @@ radioTrainerDisabled: GLOBAL
 modelHeliDisabled: OFF
 modelFMDisabled: OFF
 modelCurvesDisabled: GLOBAL
-modelGVDisabled: GLOBAL
+modelGVDisabled: ON
 modelLSDisabled: GLOBAL
 modelSFDisabled: GLOBAL
 modelCustomScriptsDisabled: GLOBAL
