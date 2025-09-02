@@ -5,13 +5,13 @@ Labels:
 Sort: 1
 Models:
   model2.yml:
-    hash: "156c0000215bfb75"
+    hash: "076d0000225b0111"
     name: "Diamond2500"
     mod1id: 11
     mod1type: 5
     labels: "planes"
     bitmap: "dia2500.png"
-    lastopen: 1756693740
+    lastopen: 1756778882
   model3.yml:
     hash: "bd640000195b6766"
     name: "longrange7i"
@@ -36,13 +36,13 @@ Models:
     bitmap: "racer_5.png"
     lastopen: 1756126275
   model6.yml:
-    hash: "11580000215b8313"
+    hash: "b8590000225b7510"
     name: "Triple Speed"
     mod1id: 11
     mod1type: 5
     labels: "planes"
     bitmap: "triplene.png"
-    lastopen: 1756693228
+    lastopen: 1756778436
   model1.yml:
     hash: "ed550000195b4d66"
     name: "85 new"

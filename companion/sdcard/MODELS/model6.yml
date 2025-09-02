@@ -68,7 +68,7 @@ mixData:
    swtch: "NONE"
    curve: 
       type: 3
-      value: 3
+      value: 4
    delayUp: 0
    delayDown: 0
    speedUp: 0
@@ -91,6 +91,23 @@ mixData:
    speedUp: 0
    speedDown: 0
    name: "Elev"
+ -
+   destCh: 2
+   srcRaw: "I2"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: 0
+   offset: -100
+   swtch: "!L3"
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
  -
    destCh: 2
    srcRaw: "I4"
@@ -286,23 +303,28 @@ expoData:
       value: 0
    chn: 4
    flightModes: 000000000
-   name: "Motor"
+   name: ""
 curves: 
    0:
       type: 0
       smooth: 0
       points: 0
-      name: "thr"
+      name: "Mot"
    1:
       type: 0
       smooth: 0
       points: -3
-      name: "cro"
+      name: "Cro"
    2:
       type: 0
       smooth: 0
       points: -2
-      name: "AiC"
+      name: "CAr"
+   3:
+      type: 0
+      smooth: 0
+      points: -2
+      name: "CAl"
 points: 
    0:
       val: -100
@@ -316,6 +338,8 @@ points:
       val: 100
    8:
       val: 50
+   11:
+      val: -50
 logicalSw: 
    0:
       func: FUNC_VNEG
@@ -378,6 +402,10 @@ customFn:
       swtch: "SA2"
       func: PLAY_TRACK
       def: "VariOn,1,1x"
+   9:
+      swtch: "!L3"
+      func: OVERRIDE_CHANNEL
+      def: "2,-100,1"
 flightModeData: 
    0:
       trim: 
@@ -411,8 +439,6 @@ thrTraceSrc: SL2
 switchWarning: 
    SF:
       pos: up
-   SG:
-      pos: up
    SH:
       pos: up
 varioData: 
@@ -427,7 +453,7 @@ rfAlarms:
    warning: 45
    critical: 42
 thrTrimSw: 0
-potsWarnMode: WARN_OFF
+potsWarnMode: WARN_MANUAL
 jitterFilter: GLOBAL
 moduleData: 
    1:
